@@ -56,7 +56,6 @@ background: #333
 #obsah {
 padding: 5px 20px 50px 20px;
 background: #aaa;
-
 text-align: left;
 background-image: linear-gradient(to bottom,#000,#333);
 /*border: 1px solid red;*/
@@ -69,7 +68,7 @@ margin: 10px 10px 0px 10px;
 color: #eee;
 border: 2px solid #222;
 background-image: linear-gradient(to top,#888,#bbb);
-background: #333
+background: #333;
 }
 
 #obsah div a{
