@@ -53,7 +53,7 @@ background-image: linear-gradient(to bottom,#333,#222);
 background: #333
 }
 
-#obsah {
+#content {
 padding: 5px 20px 50px 20px;
 background: #aaa;
 text-align: left;
@@ -61,7 +61,7 @@ background-image: linear-gradient(to bottom,#000,#333);
 /*border: 1px solid red;*/
 }
 
-#obsah div{
+#content div{
 background: #fff;
 padding: 10px;
 margin: 10px 10px 0px 10px;
@@ -71,17 +71,21 @@ background-image: linear-gradient(to top,#888,#bbb);
 background: #333;
 }
 
-#obsah div a{
-	color:#55f;
+#content div a{
+	color:#44f;
 	text-decoration: none;
 }
 
-#obsah div h2{
+#content div ul{
+margin: 0px;
+}
+
+#content div h2{
 padding: 0px;
 margin: 0px;
 }
 
-#obsah div h2:first-letter{
+#content div h2:first-letter{
 font-family: Georgia;
 padding: 0px;
 margin: 0px;
@@ -92,20 +96,26 @@ font-style: italic;
 text-decoration: none;
 }
 
-#obsah div h3{
+#content div h3{
 	font-size: 25px;
 }
 
-#obsah div p{
+#content div p{
 	color: #666;
 	padding-top: 10px;
 }
 
 #footer{
-padding: 0px;
-margin: 0px;
+padding: 5px;
+margin: 5px;
+text-align: left;
 font-family: arial;
-color: white;
+color: #777;
 font-size: 10px;
 background: #333;
+}
+
+#footer a{
+	color:#44f;
+	text-decoration: none;
 }
