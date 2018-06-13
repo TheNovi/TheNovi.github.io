@@ -1,6 +1,0 @@
-Hello world
-Hi guys, Novi here with his first post.
-Firstly I must thank again to Github for making this site possible. (And yes, I know they will never read this)
-Secondly, I want to talk about the purpose of this blog.
-Let me say this way this is not going to be a copy of my twitter. On Twitter, I will write everything that comes to my mind.
-But here you will see only post about main things (like new update to a project, started a new project, some new big events in my live/project, etc.)
