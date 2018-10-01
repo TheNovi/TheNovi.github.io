@@ -16,15 +16,3 @@ I am just 20 year old programmer and gamer from Czech Republic.
 Cute little music player done in Python 3.
 [Github](https://github.com/TheNovi/Music-Player)
 Beta
-
-#### Cube Timer
-Cute little Rubik's cube timer done in Python 3.
-[Github](https://github.com/TheNovi/Cube-Timer)
-Alpha
-
-#### Sorp
-My little sorting game made in Pygame.
-Nothing to see here yet.
-I barely start this project
-[Github](https://github.com/TheNovi/Sorp)
-Pre-Alpha
