@@ -1,3 +1,0 @@
-Nmp+ out of beta
-Novi music player is finally, after 4 years of development, with his/her (gender is not decided yet) first release out of beta.
-There are still lots of bugs and lots of work to be done. But I think its about time for at least one full release. And get rid of that beta thing after the version number. So here it is Nmp+ first full release !!!
