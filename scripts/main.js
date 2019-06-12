@@ -1,6 +1,6 @@
 function footer(){
 	y = new Date().getFullYear();
-	a = [ y, y-1, y + ' - since your dead', '1997', 'NaN', 'Null', true, false];
+	a = [ y, y-1, y + ' - until your death', '1997', 'NaN', 'Null', true, false, '42', '1337', '0x1a4'];
 	d = document.getElementById("footer");
 	d.innerHTML = d.innerHTML.replace('{}', a[Math.floor(Math.random()*a.length)]);
 }
