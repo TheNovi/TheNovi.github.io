@@ -6,10 +6,11 @@ function footer(){
 }
 
 function age() {
-	y = new Date().getFullYear() - 1997;
-	if ((new Date().getMonth() - 5) < 0) y--;
-	d = document.getElementById("age");
-	d.innerHTML = d.innerHTML.replace('{}', "I am just an " + y + " years old programmer, gamer, geek and otaku from Czech Republic.");
+	if(d = document.getElementById("age")){
+		y = new Date().getFullYear() - 1997;
+		if ((new Date().getMonth() - 5) < 0) y--;
+		d.innerHTML = d.innerHTML.replace('{}', "I am just an " + y + " years old programmer, gamer, geek and otaku from Czech Republic.");
+	}
 }
 
 (function() {
