@@ -30,6 +30,7 @@ class Tag:
 class Text(Tag):
 	def __init__(self, text):
 		super().__init__(None)
+		text = text.replace('\n', '<br>').strip()
 		while '{' in text:
 			s, e = text.index('{'), text.index('}')
 			text = text[:s] + Text.__parse__(text[s+1:e].strip()) + text[e+1:]
@@ -37,8 +38,17 @@ class Text(Tag):
 
 	@staticmethod
 	def __parse__(text):
-		print(f'"{text}"')
-		return "HERE"
+		s = text.split(' ')
+		out = ''
+		if s[0] == 'a':
+			out = '<a '
+			i = 1
+			if s[i] == 'b':
+				out += "target='_blank' "
+				i += 1
+			out += f"href={s[i]}>{''.join(s[i+1:])}</a>"
+			return out
+		return out
 
 	def __str__(self):
 		return ''.join(['\t' for _ in range(self.tab)]) + self.text + '\n'

@@ -11,13 +11,13 @@ def default(p: Page, pages: list, sub_folder=""):
 	p.head.add_content(Tag('meta', par="charset='utf-8'/"))
 
 	header = p.body.add_content(Tag('div', par="id='header'"))
-	header.add_content(Tag('h1', f"<a href='{path}index.html'>TheNovi</a>"))
+	header.add_content(Tag('h1', f"{{a {path}index.html TheNovi}}"))
 	ul = header.add_content(Tag('div', par="id='nav")).add_content(Tag('ul'))
-	ul.add_content(Tag('li', f"<a href='{path}index.html'>Home</a>"))
+	ul.add_content(Tag('li', f"{{a {path}index.html Home}}"))
 	for a in pages:
-		ul.add_content(Tag('li', f"<a href='{sub_folder}{a}.html'>{a}</a>"))
+		ul.add_content(Tag('li', f"{{a {sub_folder}{a}.html {a}}}"))
 	c = p.body.add_content(Tag('div', par="id='content"))
-	p.body.add_content(Tag('div', "&copy; TheNovi 2218 { asd } -- Many thanks to <a href='https://github.com'>Github</a> for making this site possible.<br>", "id='footer"))
+	p.body.add_content(Tag('div', "&copy; TheNovi 2218 -- Many thanks to {a b https://github.com Github} for making this site possible.\n", "id='footer"))
 	return c
 
 
