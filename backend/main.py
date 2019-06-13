@@ -17,7 +17,7 @@ def default(p: Page, pages: list, sub_folder=""):
 	for a in pages:
 		ul.add_content(Tag('li', f"<a href='{sub_folder}{a}.html'>{a}</a>"))
 	c = p.body.add_content(Tag('div', par="id='content"))
-	p.body.add_content(Tag('div', "&copy; TheNovi 2218 -- Many thanks to <a href='https://github.com'>Github</a> for making this site possible.<br>", "id='footer"))
+	p.body.add_content(Tag('div', "&copy; TheNovi 2218 { asd } -- Many thanks to <a href='https://github.com'>Github</a> for making this site possible.<br>", "id='footer"))
 	return c
 
 
