@@ -1,0 +1,26 @@
+﻿<?php $index=true; require_once 'templates/header.php' ?>
+		<div id='content'>
+			<div id='age'>
+				<h2>About me</h2><br>
+				{}
+				<p><a href='html/About.html'>More</a></p>
+			</div>
+			<div>
+				<h2>Contact</h2><br>
+				<ul>
+				<li>jakub.novi.novacek@gmail.com</li>
+				<li><a target='_blank' href='https://twitter.com/TheN0vi'>Twitter</a></li>
+				<li><a target='_blank' href='https://github.com/TheNovi'>Github</a></li>
+				<li><a target='_blank' href='http://steamcommunity.com/id/TheNovi'>Steam</a></li>
+				</ul>
+				<p><a href='html/Contact.html'>More</a></p>
+			</div>
+			<div>
+				<h2>Projects</h2><br>
+				<ul>
+				<li>Music player <a target='_blank' href='https://github.com/TheNovi/Music-Player'>Github</a></li>
+				</ul>
+				<p><a href='html/Projects.html'>More</a></p>
+			</div>
+		</div>
+<?php require_once 'templates/footer.php' ?>
