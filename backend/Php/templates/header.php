@@ -6,8 +6,8 @@ $path_to_others = $index?'html/':'';
 <html>
 	<head>
 <?php
-echo "\t\t<link href='{$path_to_index}css/main.css' rel='stylesheet' type='text/css'>\n";
-echo "\t\t<link rel='icon' href='{$path_to_index}img/icon.png'>\n";
+	echo "\t\t<link href='{$path_to_index}css/main.css' rel='stylesheet' type='text/css'>\n";
+	echo "\t\t<link rel='icon' href='{$path_to_index}img/icon.png'>\n";
 ?>
 		<title>TheNovi</title>
 		<meta charset='utf-8'/>
@@ -15,7 +15,9 @@ echo "\t\t<link rel='icon' href='{$path_to_index}img/icon.png'>\n";
 
 	<body>
 		<div id='header'>
-			<h1><a href='index.html'>TheNovi</a></h1>
+<?php
+	echo "\t\t\t<h1><a href='{$path_to_index}index.html'>TheNovi</a></h1>\n"
+?>
 			<div id='nav'>
 				<ul>
 <?php

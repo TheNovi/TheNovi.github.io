@@ -10,4 +10,4 @@ if __name__ == "__main__":
 		path = 'backend/' + path
 	
 	for file in files:
-		os.system(f'php {path}Php/{file}.php > {path}nudes/{file}.html')
+		os.system(f'php {path}Php/{file}.php > {path}../{file}.html')
