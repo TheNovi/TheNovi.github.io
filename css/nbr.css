@@ -1,5 +1,11 @@
+:root{
+	--b: #000;
+	--t: #f00;
+	--a: #00f;
+}
+
 html{
-	background: #000;
+	background: var(--b);
 }
 
 body {
@@ -7,7 +13,7 @@ margin: 0px;
 }
 
 #header {
-background: #000;
+background: var(--b);
 text-align: center;
 border-top-left-radius: 5px;
 border-top-right-radius: 5px;
@@ -23,7 +29,7 @@ font-family: georgia;
 
 #header h1 a{
 	font-family: georgia;
-	color:#a00;
+	color: var(--t);
 	text-decoration: none;
 }
 
@@ -41,8 +47,8 @@ margin: 0px;
 }
 
 #nav ul li a {
-background: black;
-color: #a00;
+background: var(--b);
+color: var(--t);
 text-decoration: none;
 font-size: 200%;
 margin: 0px 4px;
@@ -50,28 +56,27 @@ padding: 0px 8px;
 border-radius: 9px;
 /* background-image: linear-gradient(to bottom,#333,#222); */
 border: 1px solid red;
-background: #000
 }
 
 #content {
 padding: 5px 20px 50px 20px;
-background: #000;
+background: var(--b);
 text-align: left;
 /* background-image: linear-gradient(to bottom,#000,#333); */
 /* border: 1px solid red; */
 }
 
 #content div{
-background: #000;
+background: var(--b);
 padding: 10px;
 margin: 10px 10px 0px 10px;
-color: #a00;
-border: 2px solid #a00;
+color: var(--t);
+border: 2px solid red;
 /* background-image: linear-gradient(to top,#888,#bbb); */
 }
 
 #content div a{
-	color:rgb(255, 100, 100);
+	color: var(--a);
 	text-decoration: none;
 }
 
@@ -88,7 +93,7 @@ margin: 0px;
 font-family: Georgia;
 padding: 0px;
 margin: 0px;
-color: #f00;
+color: var(--t);
 font-size: 50px;
 font-weight: normal;
 font-style: italic;
@@ -100,7 +105,7 @@ text-decoration: none;
 }
 
 #content div p{
-	color: #800;
+	color: var(--t);
 	padding-top: 10px;
 }
 
@@ -109,12 +114,12 @@ padding: 5px;
 margin: 5px;
 text-align: left;
 font-family: arial;
-color: #a00;
+color: var(--t);
 font-size: 10px;
-background: #000;
+background: var(--b);
 }
 
 #footer a{
-	color:rgb(255, 100, 100);
+	color: var(--a);
 	text-decoration: none;
 }
