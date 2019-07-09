@@ -1,4 +1,4 @@
-<?php require_once __DIR__ . '/../templates/header.php' ?>
+<?php require __DIR__ . '/../includes/header.inc.php' ?>
 		<div id='content'>
 			<div id='age'>
 				<h2>Who am I?</h2><br>
@@ -23,4 +23,4 @@
 				One thing is for sure if the game is top played/streamed game, I don't play it. It's not like I hate it because it's popular or anything. I just don't enjoy them. Idk why.
 			</div>
 		</div>
-<?php require_once __DIR__ . '/../templates/footer.php' ?>
+<?php require __DIR__ . '/../includes/footer.inc.php' ?>

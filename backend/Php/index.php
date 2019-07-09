@@ -1,4 +1,4 @@
-﻿<?php $index=true; require_once 'templates/header.php' ?>
+﻿<?php $index=true; require 'includes/header.inc.php' ?>
 		<div id='content'>
 			<div id='age'>
 				<h2>About me</h2><br>
@@ -23,4 +23,4 @@
 				<p><a href='html/Projects.html'>More</a></p>
 			</div>
 		</div>
-<?php require_once 'templates/footer.php' ?>
+<?php require 'includes/footer.inc.php' ?>

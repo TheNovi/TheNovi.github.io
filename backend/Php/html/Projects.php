@@ -1,4 +1,4 @@
-<?php require_once __DIR__ . '/../templates/header.php' ?>
+<?php require __DIR__ . '/../includes/header.inc.php' ?>
 		<div id='content'>
 			<div>
 				<h2>Kimi</h2><br>
@@ -27,4 +27,4 @@
 			</div>
 		</div>
 		<script src="../scripts/projects.js"></script>
-<?php require_once __DIR__ . '/../templates/footer.php' ?>
+<?php require __DIR__ . '/../includes/footer.inc.php' ?>
