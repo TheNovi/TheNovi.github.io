@@ -6,7 +6,7 @@ $path_to_others = $index?'html/':'';
 <html>
 	<head>
 <?php
-	echo "\t\t<link href='{$path_to_index}css/main.css' rel='stylesheet' type='text/css'>\n";
+	echo "\t\t<link href='{$path_to_index}css/nbr.css' rel='stylesheet' type='text/css'>\n";
 	echo "\t\t<link rel='icon' href='{$path_to_index}img/icon.png'>\n";
 ?>
 		<title>TheNovi</title>
