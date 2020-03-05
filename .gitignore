@@ -4,3 +4,5 @@ out/
 nudes/
 *.iml
 *.tod
+backend/php/
+parse_php.py
