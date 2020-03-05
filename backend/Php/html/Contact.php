@@ -3,10 +3,10 @@
 			<div>
 				<h2>Contact/Social</h2><br>
 				<ul>
-					<li>jakub.novi.novacek@gmail.com</li>
+					<li>jakub.novi.novacek@gmail.com <a href="mailto:jakub.novi.novacek@gmail.com">mailto</a></li>
 					<li>Discord: TheNovi#9782</li>
-					<li><a href='https://twitter.com/TheN0vi'>Twitter</a></li>
-					<li><a href='https://devrant.com/users/novi'>Devrant</a></li>
+					<li><a target='_blank' href='https://twitter.com/TheN0vi'>Twitter</a></li>
+					<li><a target='_blank' href='https://devrant.com/users/novi'>Devrant</a></li>
 				</ul>
 			</div>
 			<div>
