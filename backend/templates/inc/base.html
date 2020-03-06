@@ -1,12 +1,38 @@
 <!DOCTYPE html>
+{% if  path %}
+{% set pi = '../' %}
+{% set po = '' %}
+{% else %}
+{% set pi = '' %}
+{% set po = 'html/' %}
+{% endif %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>
-        {% block title %}{% endblock %}
-    </title>
+    <link href='{{pi}}css/main.css' rel='stylesheet' type='text/css'>
+    <link href='{{pi}}img/icon.png' rel='icon'>
+    <title>TheNovi</title>
 </head>
+
 <body>
-{% block body %}{% endblock %}
+<div id='header'>
+    <h1><a href='{{pi}}index.html'>TheNovi</a></h1>
+    <div id='nav'>
+        <ul>
+            <li><a href='{{pi}}index.html'>Home</a></li>
+            <li><a href='{{po}}About.html'>About</a></li>
+            <li><a href='{{po}}Contact.html'>Contact</a></li>
+            <li><a href='{{po}}Projects.html'>Projects</a></li>
+        </ul>
+    </div>
+</div>
+<div id='content'>
+    {% block content %}{% endblock %}
+</div>
+<div id='footer'>&copy; TheNovi ({}) -- Many thanks to <a href='https://github.com' rel="noopener noreferrer"
+                                                          target='_blank'>Github</a> for
+    making this site possible.
+</div>
+<script src='{{pi}}scripts/main.js'></script>
 </body>
 </html>
