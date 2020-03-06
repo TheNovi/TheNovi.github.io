@@ -3,19 +3,16 @@
 {% macro link(link, text) %}
 <a href='{{link}}' rel='noopener noreferrer' target='_blank'>{{text}}</a>{% endmacro %}
 {% macro add_github(name) %}
-<p>
-    <a href='https://github.com/TheNovi/{{name}}' rel='noopener noreferrer' target='_blank'>Github</a>
-</p>{% endmacro %}
+<p><a href='https://github.com/TheNovi/{{name}}' rel='noopener noreferrer' target='_blank'>Github</a></p>{% endmacro %}
 
 {% macro basic(title, value) %}
 <div>
-    <h2>{{title}}</h2>
-    <br>
-    {{value}}
-</div>{% endmacro %}
+				<h2>{{title}}</h2><br>
+				{{value}}
+			</div>{% endmacro %}
 
 {% macro project(title, name, state, value) %}
-{{basic(title, value+'\n    '+add_github(name)+'\n    '+p(state))}}{% endmacro %}
+{{basic(title, value+'\n				'+add_github(name)+'\n				'+p(state))}}{% endmacro %}
 
 {#
 {{mac.basic('Title', 'Value')}}
