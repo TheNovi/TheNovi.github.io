@@ -1,14 +1,23 @@
-{% macro sub_project(name, state) %}
-<p><a href='https://github.com/TheNovi/{{name}}' target='_blank'>Github</a></p>
-<p>{{state}}</p>{% endmacro %}
-{# These are private ^^^ #}
+{% macro p(text) %}
+<p>{{text}}</p>{% endmacro %}
+{% macro link(link, text) %}
+<a href='{{link}}' rel='noopener noreferrer' target='_blank'>{{text}}</a>{% endmacro %}
+{% macro add_github(name) %}
+<p>
+    <a href='https://github.com/TheNovi/{{name}}' rel='noopener noreferrer' target='_blank'>Github</a>
+</p>{% endmacro %}
 
 {% macro basic(title, value) %}
 <div>
-	<h2>{{title}}</h2><br>
-	{{value}}
+    <h2>{{title}}</h2>
+    <br>
+    {{value}}
 </div>{% endmacro %}
 
-{% macro project(title, value, name, state) %}
-{{basic(title, sub_project(name, state))}}
-{% endmacro %}
+{% macro project(title, name, state, value) %}
+{{basic(title, value+'\n    '+add_github(name)+'\n    '+p(state))}}{% endmacro %}
+
+{#
+{{mac.basic('Title', 'Value')}}
+{{mac.project('Title', 'Chika', 'Gama', 'Value')}}
+#}
