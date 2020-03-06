@@ -1,4 +1,6 @@
 {% extends 'inc/base.html' %}
+{% import 'inc/macros.html' as mac%}
 {% block content %}
-Index
+{{mac.basic('Title', 'Value')}}
+{{mac.project('Title', 'Value', 'Chika', 'Gama')}}
 {% endblock content %}

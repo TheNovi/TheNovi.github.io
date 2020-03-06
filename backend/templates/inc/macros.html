@@ -1,0 +1,14 @@
+{% macro sub_project(name, state) %}
+<p><a href='https://github.com/TheNovi/{{name}}' target='_blank'>Github</a></p>
+<p>{{state}}</p>{% endmacro %}
+{# These are private ^^^ #}
+
+{% macro basic(title, value) %}
+<div>
+	<h2>{{title}}</h2><br>
+	{{value}}
+</div>{% endmacro %}
+
+{% macro project(title, value, name, state) %}
+{{basic(title, sub_project(name, state))}}
+{% endmacro %}
