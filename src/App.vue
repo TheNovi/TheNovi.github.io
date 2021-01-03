@@ -7,7 +7,7 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from "vue-property-decorator";
+import { Component, Vue, Watch } from "vue-property-decorator";
 import Header from "@/components/Header.vue";
 import Footer from "@/components/Footer.vue";
 
@@ -20,6 +20,14 @@ import Footer from "@/components/Footer.vue";
 export default class App extends Vue {
   created() {
     this.$store.dispatch("basic/init");
+  }
+
+  @Watch("$route")
+  setTitle() {
+    const path = this.$route.path
+      .replace(/^\//, "")
+      .replace(/^\w/, c => c.toUpperCase());
+    document.title = "TheNovi" + (path ? ` | ${path}` : "");
   }
 }
 </script>
