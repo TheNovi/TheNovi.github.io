@@ -12,6 +12,14 @@
             >Twitter</a
           >
         </li>
+        <li>
+          <a
+            href="https://facebook.com/TheN0vi"
+            rel="noopener noreferrer"
+            target="_blank"
+            >Facebook</a
+          >
+        </li>
       </ul>
     </Content>
     <Content title="Programing">
