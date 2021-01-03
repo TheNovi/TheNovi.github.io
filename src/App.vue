@@ -38,45 +38,4 @@ body {
   background-image: linear-gradient(to bottom, black, var(--back));
   text-align: left;
 }
-
-#content div {
-  background: var(--back);
-  padding: 10px;
-  margin: 10px;
-  color: #ddd;
-  border: 2px solid #222;
-}
-
-#content div a {
-  color: #44f;
-  text-decoration: none;
-}
-
-#content div ul {
-  margin: 0px;
-}
-
-#content div h2 {
-  padding: 0px;
-  margin: 0px;
-}
-
-#content div h2:first-letter {
-  /* font-family: Georgia; */
-  padding: 0px;
-  margin: 0px;
-  color: white;
-  font-size: 50px;
-  font-weight: normal;
-  font-style: italic;
-  text-decoration: none;
-}
-
-#content div h3 {
-  font-size: 25px;
-}
-
-#content div p {
-  color: #666;
-}
 </style>
