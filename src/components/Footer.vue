@@ -1,6 +1,6 @@
 <template>
   <div>
-    &copy; TheNovi ({}) -- Many thanks to
+    &copy; TheNovi ({{ footer }}) -- Many thanks to
     <a href="https://github.com" rel="noopener noreferrer" target="_blank"
       >Github</a
     >
@@ -9,11 +9,15 @@
 </template>
 
 <script lang="ts">
-// TODO Year
 import { Component, Vue } from "vue-property-decorator";
+import { namespace } from "vuex-class";
+const basic = namespace("basic");
 
 @Component
-export default class Footer extends Vue {}
+export default class Footer extends Vue {
+  @basic.State
+  footer!: string;
+}
 </script>
 
 <style scoped>

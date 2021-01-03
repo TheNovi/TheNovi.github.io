@@ -1,8 +1,7 @@
 <template>
   <div>
     <Content title="Who am I?">
-      {}<br />
-      <!-- TODO Main script -->
+      {{ age }}<br />
       If you want to know more (for some reason).
       <a href="Contact.html">contact me</a>.
     </Content>
@@ -52,11 +51,15 @@
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
 import Content from "@/components/Content.vue";
-
+import { namespace } from "vuex-class";
+const basic = namespace("basic");
 @Component({
   components: {
     Content
   }
 })
-export default class About extends Vue {}
+export default class About extends Vue {
+  @basic.State
+  age!: string;
+}
 </script>

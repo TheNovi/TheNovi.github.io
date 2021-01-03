@@ -1,7 +1,7 @@
 <template>
   <div>
     <Content title="About me">
-      {}
+      {{ age }}
       <p><a href="html/About.html">More</a></p>
     </Content>
     <Content title="Contact">
@@ -78,11 +78,16 @@
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
 import Content from "@/components/Content.vue";
+import { namespace } from "vuex-class";
+const basic = namespace("basic");
 
 @Component({
   components: {
     Content
   }
 })
-export default class Home extends Vue {}
+export default class Home extends Vue {
+  @basic.State
+  age!: string;
+}
 </script>
