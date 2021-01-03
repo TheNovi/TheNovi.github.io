@@ -27,8 +27,8 @@ jobs:
     - run: npm ci
     - run: npm run build --if-present
     - name: Deploy
-      working-directory: ./dist
       run: |
+        cd dist/
         git init
         git add -A
         git commit -m 'deploy'
