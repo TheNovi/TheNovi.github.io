@@ -2,6 +2,13 @@
   "name": "thenovi.github.io",
   "version": "0.1.0",
   "private": true,
+  "license": "MIT",
+  "homepage": "https://github.com/TheNovi/TlupaPolis-Web",
+  "author": {
+    "name": "TheNovi",
+    "email": "jakub.novi.novacek@gmail.com",
+    "url": "https://thenovi.github.io"
+  },
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
@@ -32,7 +39,9 @@
     "lint-staged": "^9.5.0",
     "prettier": "^1.19.1",
     "typescript": "~3.9.3",
-    "vue-template-compiler": "^2.6.11"
+    "vue-template-compiler": "^2.6.11",
+    "vuex-class": "^0.3.2",
+    "vuex-module-decorators": "^1.0.1"
   },
   "eslintConfig": {
     "root": true,
