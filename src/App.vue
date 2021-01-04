@@ -20,14 +20,13 @@ import Footer from "@/components/Footer.vue";
 export default class App extends Vue {
   created() {
     this.$store.dispatch("basic/init");
+    this.setTitle();
   }
 
   @Watch("$route")
   setTitle() {
-    const path = this.$route.path
-      .replace(/^\//, "")
-      .replace(/^\w/, c => c.toUpperCase());
-    document.title = "TheNovi" + (path ? ` | ${path}` : "");
+    const path = this.$route.name;
+    document.title = "TheNovi" + (path != "Home" ? ` | ${path}` : "");
   }
 }
 </script>
