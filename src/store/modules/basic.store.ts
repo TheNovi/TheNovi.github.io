@@ -1,7 +1,7 @@
 import { VuexModule, Module, Mutation, Action } from "vuex-module-decorators";
 
 @Module({ namespaced: true })
-export default class Patient extends VuexModule {
+export default class Basic extends VuexModule {
   footer = "";
   age = "";
 
